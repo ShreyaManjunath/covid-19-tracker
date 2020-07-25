@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+}
+
+body{
+  background-color: #f5f6fa;
+  /* #f5f6fa */
+}
+.app__header{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.app__header{
+  /* color: black; */
+  font-size:1.5rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+.app__dropdown{
+  background-color: white;
+}
+.app_stats{
+  display: flex;
+  justify-content: space-between;
+}
+.app_left{
+  flex: 0.9;
+}
+.app_right{
+  display: flex;
+  flex-direction: column;
+}
+.app_right .muicardcontent-root{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.app_graph{
+  flex-grow: 1;
+}
+@media (max-width:990px){
+  .app{
+    flex-direction: column;
+  }
+}
